@@ -22,7 +22,7 @@ MVP will be just the basic information and basic display. Being able to look thr
 
 ## Post MVP
 
-Post MVP will be very visual. High Def images and a lot of css.
+Post MVP will be very visual. High Def images and a lot of css. Can give each information outlet like characters their own pages as well.
 
 ## Issues
 
