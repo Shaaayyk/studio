@@ -7,7 +7,7 @@
 
 ## Wireframes
 
-![Wireframes](./wireframes/wireframe-pic1.png)![Wireframes](./wireframes/wireframe-pic2.png)
+![Wireframes](wireframes/wireframe-pic1.png)![Wireframes](wireframes/wireframe-pic2.png)
 
 ## Project Description 
 
