@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Film from './components/Film'
 import Home from './components/Home'
+import Films from './components/Films'
 
 
 class App extends React.Component {
@@ -21,7 +22,6 @@ class App extends React.Component {
     this.setState({
       films: films,
     })
-    console.log(this.state.films)
   }
 
   handleChange = async (event) => {
@@ -35,11 +35,9 @@ class App extends React.Component {
     this.setState({
       film: film
     })
-    console.log(film)
   }
 
   render() {
-    console.log(this.state.value)
     return (
       <div className="App">
         <Header />
@@ -53,10 +51,16 @@ class App extends React.Component {
                 handleSubmit={this.handleSubmit}
               />)}
           />
-          <Route path="/:title"
+          <Route exact path="/films"
+            render={() => (
+              <Films
+                films={this.state.films}
+              />)}
+          />
+          <Route path="/film/:id"
             render={(props) => (
               <Film
-                filmId={props.match.params.title}
+                filmId={props.match.params.id}
                 film={this.state.film}
                 value={this.state.value}
               />)}
