@@ -89,9 +89,16 @@ export default class Film extends React.Component {
   render() {
     console.log(this.state)
     return (
-      <div>
+      <div id="film">
         <div id="poster">
           {this.showImage()}
+        </div>
+        <div id="info">
+          <h1>{this.state.film.title}</h1>
+          <p>{this.state.film.description}</p>
+          <p>{this.state.film.director}</p>
+          <p>{this.state.film.release_date}</p>
+          <p>{this.state.film.rt_score}</p>
         </div>
       </div>
     )
