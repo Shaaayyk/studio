@@ -5,13 +5,17 @@
 #header {
   background:violet;
   display: grid;
-  grid-template-columns: 30% 60%;
-  justify-items: center;
+  grid-template-columns: 30% 70%;
   align-items: center;
+  height: 100px;
 }
 
 #header img {
-  width: 100%;
+  width: 15vw;
+}
+
+#header h1 {
+  margin-left: 20%;
 }
 
 #home {
@@ -23,6 +27,52 @@
   height: 100vh;
 }
 
-#footer {
+#films {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 3%;
+  margin-left: 4.5%;
   text-align: center;
+}
+
+#films a h1 {
+  font-size: 20px;
+}
+
+.film {
+  width: 80%;
+}
+
+.film a img {
+  width: 100%;
+  height: 50vh;
+}
+
+#film {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#info {
+  margin-left: 2%;
+}
+
+#info h1{
+  font-size: 4rem;
+}
+
+#info p {
+  font-size: 2rem;
+}
+
+#poster img {
+  width: 100%;
+  min-height: 100%;
+}
+
+#footer {
+  margin-top: -0.55%;
+  background: violet;
+  text-align: center;
+  
 }

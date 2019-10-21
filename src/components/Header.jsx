@@ -8,7 +8,7 @@ export default function Header() {
       <Link to='/'>
         <img src={logo} alt="logo" />
       </Link>
-      <h1>Studio Ghibli</h1>
+      <h1>STUDIO GHIBLI</h1>
     </div>
   )
 }

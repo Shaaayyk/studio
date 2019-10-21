@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Route } from 'react-router-dom'
-import { getApi, getFilm } from './services/api-helper'
+import { getApi, getFilm, getPoster } from './services/api-helper'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Film from './components/Film'
@@ -18,8 +18,16 @@ class App extends React.Component {
 
   async componentDidMount() {
     const films = await getApi()
+    const filmsPromise = films.map(async (film) => {
+      const poster = await getPoster(film.title);
+      return {
+        ...film,
+        poster
+      }
+    })
+    const newFilms = await Promise.all(filmsPromise)
     this.setState({
-      films: films,
+      films: newFilms,
     })
   }
 
