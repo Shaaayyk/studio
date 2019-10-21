@@ -13,8 +13,7 @@ class App extends React.Component {
 
   state = {
     films: [],
-    film: [],
-    value: ''
+    value: '',
   }
 
   async componentDidMount() {
@@ -46,7 +45,6 @@ class App extends React.Component {
             render={() => (
               <Home
                 films={this.state.films}
-                film={this.state.film}
                 handleChange={this.handleChange}
                 handleSubmit={this.handleSubmit}
               />)}
@@ -61,7 +59,6 @@ class App extends React.Component {
             render={(props) => (
               <Film
                 filmId={props.match.params.id}
-                film={this.state.film}
                 value={this.state.value}
               />)}
           />
