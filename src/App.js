@@ -17,8 +17,6 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
-
-    window.scrollTo(0, 0)
     const films = await getApi()
     const filmsPromise = films.map(async (film) => {
       const poster = await getPoster(film.title);
