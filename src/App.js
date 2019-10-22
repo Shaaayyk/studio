@@ -17,6 +17,8 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
+
+    window.scrollTo(0, 0)
     const films = await getApi()
     const filmsPromise = films.map(async (film) => {
       const poster = await getPoster(film.title);
@@ -29,6 +31,11 @@ class App extends React.Component {
     this.setState({
       films: newFilms,
     })
+  }
+
+  handleClick = () => {
+    document.querySelector('select').style.display = "block"
+    document.querySelector('#click').style.display = 'none'
   }
 
   handleChange = async (event) => {
@@ -47,7 +54,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header handleClick={this.handleClick} />
         <main>
           <Route exact path="/"
             render={() => (
