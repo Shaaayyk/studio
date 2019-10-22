@@ -1,14 +1,15 @@
 .App {
   font-family: 'Shadows Into Light', cursive;
-  background:#A3BF3B
+  background: #72DBF2;
 }
 
 #header {
-  background:#F2EB88;
+  background:#72DBF2;
   display: grid;
   grid-template-columns: 20% 40% 40%;
   align-items: center;
   height: 6.2rem;
+  border-bottom: 1.5px solid black;
 }
 
 #header img {
@@ -18,7 +19,7 @@
 #header  h1 {
   margin-left: 40%;
   justify-self: center;
-  color: #2E5955;
+  color: #D973A2;
 }
 
 #header nav {
@@ -31,7 +32,8 @@
 #header a {
   text-decoration: none;
   font-size: 1.4rem;
-  color: #4ECBD9;
+  color: #D973A2;
+  transition: 0.5s;
 }
 
 #header nav a:hover {
@@ -47,17 +49,19 @@
 #home img {
   width: 100%;
   height: 100vh;
+  border-bottom: 2px solid black;
 }
 
 #home h1 {
   font-size: 8rem;
-  color: #2E5955;
+  color: #D973A2;
 }
 
 #home p {
   font-size: 1.4rem;
   margin: 8% 18%;
-  color: #2E5955;
+  color: #D973A2;
+  font-weight: 600;
 }
 
 #home a {
@@ -65,8 +69,8 @@
   text-decoration: none;
   border: 1.5px solid black;
   padding: 1.5%;
-  color: #4ECBD9;
-  background: #F2EB88;
+  color: #D973A2;
+  background: #72DBF2;
   transition: 0.5s;
 }
 
@@ -90,18 +94,18 @@
 }
 
 .film a {
-  color: #4ECBD9;
+  color: #D973A2;
   text-decoration: none;
 }
 
 .film {
   width: 80%;
-  border: 1px solid black;
+  border: 1.5px solid black;
   box-shadow: 12px 12px 9.5px 0px rgba(0,0,0,0.75);
   margin-top: 3%;
   margin-bottom: 8%;
   transition: 0.5s;
-  background: #F2EB88;
+  background: #72DBF2;
 }
 
 .film:hover {
@@ -126,12 +130,12 @@
 
 #info h1{
   font-size: 4rem;
-  color: #2E5955;
+  color: #D973A2;
 }
 
 #info p {
   font-size: 2rem;
-  color: #2E5955;
+  color: #D973A2;
 }
 
 #poster img {
@@ -140,7 +144,8 @@
 }
 
 #footer {
-  background: #F2EB88;
+  border-top: 1.5px solid black;
+  background: #72DBF2;
   text-align: center;
-  color: #2E5955;
+  color: #D973A2;
 }
