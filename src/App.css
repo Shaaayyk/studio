@@ -1,10 +1,10 @@
 .App {
   font-family: 'Shadows Into Light', cursive;
-  background: #72DBF2;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(114,219,242,1) 62%);
 }
 
 #header {
-  background:#72DBF2;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(114,219,242,1) 62%);
   display: grid;
   grid-template-columns: 20% 40% 40%;
   align-items: center;
@@ -52,11 +52,6 @@
   border-bottom: 2px solid black;
 }
 
-#home h1 {
-  font-size: 8rem;
-  color: #D973A2;
-}
-
 #home p {
   font-size: 1.4rem;
   margin: 8% 18%;
@@ -89,8 +84,9 @@
 }
 
 
-#films a h1 {
-  font-size: 1.2rem;
+#films a p {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .film a {
@@ -104,14 +100,20 @@
   box-shadow: 12px 12px 9.5px 0px rgba(0,0,0,0.75);
   margin-top: 3%;
   margin-bottom: 8%;
-  transition: 0.5s;
-  background: #72DBF2;
+  transition: 1s;
+  background:  linear-gradient(to right, linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(114,219,242,1) 62%) 50%, #72DBF2 50%);
 }
 
 .film:hover {
   z-index: 1;
   transform: scale(1.18);
   box-shadow: 24px 24px 19px 0px rgba(0,0,0,0.75);
+  opacity: 0.95;
+  background: #72DBF2;
+}
+
+.film:hover .film-title{
+  font-weight: 800;
 }
 
 .film a img {
@@ -125,7 +127,8 @@
 }
 
 #info {
-  margin-left: 2%;
+  margin-left: 6%;
+  margin-right: 6%;
 }
 
 #info h1{
@@ -145,7 +148,56 @@
 
 #footer {
   border-top: 1.5px solid black;
-  background: #72DBF2;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(114,219,242,1) 62%);
   text-align: center;
   color: #D973A2;
+}
+
+
+
+.clip-text {
+  font-size: 10rem;
+  font-weight: 800;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  margin-top: 3rem;
+  margin-bottom: -1rem;
+  padding: .5rem .75rem;
+  text-align: center;
+  color: #000;
+    
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.clip-text:before,
+.clip-text:after {
+  position: absolute;
+  content: '';
+}
+
+.clip-text:before {
+  z-index: -2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit;
+}
+
+.clip-text:after {
+  position: absolute;
+  z-index: -1;
+  top: 0em;
+  right: 0em;
+  bottom: 0em;
+  left: 0em;
+  background-color: #fff;
+}
+
+.clip-text_one {
+  background-image: url(./images/gif2.gif);
+  background-position: left center, right center;
 }

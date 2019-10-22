@@ -10,7 +10,7 @@ export default function Films(props) {
           <div className='film' key={film.id}>
             <Link to={`/film/${film.id}`}>
               <img src={film.poster} alt={film.id} />
-              <h1>{film.title}</h1>
+              <p className='film-title'>{film.title}</p>
             </Link>
           </div>
         ))

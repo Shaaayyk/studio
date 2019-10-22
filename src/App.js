@@ -31,23 +31,6 @@ class App extends React.Component {
     })
   }
 
-  handleClick = () => {
-    document.querySelector('select').style.display = "block"
-    document.querySelector('#click').style.display = 'none'
-  }
-
-  handleChange = async (event) => {
-    this.setState({
-      value: event.target.value
-    })
-  }
-
-  handleSubmit = async () => {
-    const film = await getFilm(this.state.value)
-    this.setState({
-      film: film
-    })
-  }
 
   render() {
     return (
