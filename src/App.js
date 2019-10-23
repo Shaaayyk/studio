@@ -19,6 +19,8 @@ class App extends React.Component {
 
 
   async componentDidMount() {
+    let audioMusic = new Audio(music)
+    await audioMusic.play()
     const films = await getApi()
     const filmsPromise = films.map(async (film) => {
       const poster = await getPoster(film.title);
