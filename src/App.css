@@ -64,14 +64,16 @@
   text-decoration: none;
   border: 1.5px solid black;
   padding: 1.5%;
+  font-weight: 400;
   color: #D973A2;
-  background: #72DBF2;
-  transition: 0.5s;
+  background:  linear-gradient(to right, linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(114,219,242,1) 62%) 50%, #72DBF2 50%);
+  transition: 0.8s;
 }
 
 #home a:hover {
   font-size: 4rem;
   font-weight: 800;
+  background: #72DBF2;
 }
 
 #films {
@@ -166,7 +168,6 @@
   padding: .5rem .75rem;
   text-align: center;
   color: #000;
-    
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -229,7 +230,7 @@
   }
 
   #films {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .film a img {
