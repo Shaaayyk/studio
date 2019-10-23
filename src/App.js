@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Film from './components/Film'
 import Home from './components/Home'
 import Films from './components/Films'
+import music from './music/music.mp3'
 
 
 class App extends React.Component {
@@ -16,7 +17,10 @@ class App extends React.Component {
     value: '',
   }
 
+
   async componentDidMount() {
+    let audioMusic = new Audio(music)
+    await audioMusic.play()
     const films = await getApi()
     const filmsPromise = films.map(async (film) => {
       const poster = await getPoster(film.title);
