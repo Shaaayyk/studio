@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import background2 from '../images/background2.jpg'
 import gif from '../images/gif.gif'
 
 export default function Home(props) {

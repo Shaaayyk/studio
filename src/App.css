@@ -201,3 +201,42 @@
   background-image: url(./images/gif2.gif);
   background-position: left center, right center;
 }
+
+@media (max-width: 740px) {
+  html {
+    font-size: 10px;
+  }
+
+  #header img {
+    width: 20vw;
+  }
+
+  #header h1 {
+    font-size: 1.5rem;
+    margin-left: 20%;
+  }
+
+  .clip-text {
+    font-size: 6rem;
+  }
+
+  #home p {
+    margin: 6% 10%;
+  }
+
+  #home img {
+    height: 50vh;
+  }
+
+  #films {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .film a img {
+    height: 30vh;
+  }
+
+  #footer {
+    font-size: 2rem;
+  }
+}

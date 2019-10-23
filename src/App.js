@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Route } from 'react-router-dom'
-import { getApi, getFilm, getPoster } from './services/api-helper'
+import { getApi, getPoster } from './services/api-helper'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Film from './components/Film'
