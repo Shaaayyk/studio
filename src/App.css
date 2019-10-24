@@ -237,6 +237,11 @@
     height: 30vh;
   }
 
+  #film {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 40%;
+  }
+
   #footer {
     font-size: 2rem;
   }
